@@ -74,10 +74,10 @@ function generateMD(answers) {
 promptUser()
   .then(function (answers) {
     const md = generateMD(answers);
-    return writeFileAsync("readMe.md", md);
+    return writeFileAsync("README.md", md);
   })
   .then(function () {
-    console.log("Successfully wrote to readMe.md");
+    console.log("Successfully wrote to README.md");
   })
   .catch(function (err) {
     console.log(err);
