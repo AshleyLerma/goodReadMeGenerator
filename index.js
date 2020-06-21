@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // const questions = [];
 
@@ -65,9 +65,18 @@ function promptUser() {
   ]);
 }
 
-promptUser();
+function generateMD(answers) {
+  return ``;
+}
 
-// function writeToFile(fileName, data) {}
+promptUser()
+  .then(function (answers) {
+    const md = generateMD(answers);
+    return writeFileAsync(readMe.md, md);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
 // function init() {}
 
