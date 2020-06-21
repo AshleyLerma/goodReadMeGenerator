@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // const questions = [];
 
@@ -65,9 +65,23 @@ function promptUser() {
   ]);
 }
 
-promptUser();
+function generateMD(answers) {
+  return `
+  <h1>${answers.repoName}</h1>
+  `;
+}
 
-// function writeToFile(fileName, data) {}
+promptUser()
+  .then(function (answers) {
+    const md = generateMD(answers);
+    return writeFileAsync("README.md", md);
+  })
+  .then(function () {
+    console.log("Successfully wrote to README.md");
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
 // function init() {}
 
