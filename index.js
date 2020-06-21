@@ -66,13 +66,18 @@ function promptUser() {
 }
 
 function generateMD(answers) {
-  return ``;
+  return `
+  <h1>${answers.repoName}</h1>
+  `;
 }
 
 promptUser()
   .then(function (answers) {
     const md = generateMD(answers);
-    return writeFileAsync(readMe.md, md);
+    return writeFileAsync("readMe.md", md);
+  })
+  .then(function () {
+    console.log("Successfully wrote to readMe.md");
   })
   .catch(function (err) {
     console.log(err);
