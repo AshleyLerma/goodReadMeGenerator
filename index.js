@@ -68,29 +68,29 @@ function promptUser() {
 function generateMD(answers) {
   return `
   <h1>${answers.repoName}</h1>
-  <hr>
+
   <h2>Description</h2>
-  <hr>
+
   <p>${answers.description}</p>
   <h2>Table of Contents</h2>
-  <hr>
+
   <h2>Installation</h2>
-  <hr>
+
   <p>${answers.installation}</p>
   <h2>Usage</h2>
-  <hr>
+
   <p>${answers.usage}</p>
   <h2>Credits</h2>
-  <hr>
+
   <p>${answers.credits}</p>
   <h2>License</h2>
-  <hr>
+
   <p>${answers.license}</p>
   <h2>Contributing</h2>
-  <hr>
+
   <p>${answers.contribute}</p>
   <h2>Tests</h2>
-  <hr>
+
   <p>${answers.tests}</p>
   `;
 }
