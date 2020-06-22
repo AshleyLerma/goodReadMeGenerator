@@ -29,9 +29,11 @@
  + [License](#license)
 
 ## Installation
-  ` npm install inquirer`
-  ` npm install fs`
-  ` npm install util`
+ + ` npm init`
+ + ` npm install`
+ + ` npm install inquirer`
+ + ` npm install fs`
+ + ` npm install util`
 
 ## Usage
   + As A Developer
