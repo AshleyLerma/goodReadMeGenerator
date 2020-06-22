@@ -67,7 +67,7 @@ function generateMD(answers) {
   return `
  # ${answers.repoName}
 
- ![GitHub top language](https://img.shields.io/github/languages/top/A${answers.username}/${answers.repoName})
+ ![GitHub top language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repoName})
 
   ## Description
   ${answers.description}
@@ -101,6 +101,7 @@ function generateMD(answers) {
   ${answers.tests}
 
   ## Questions
+  ![GitHub profile photo](https://github.com/${answers.username}.png)
 
   `;
 }
