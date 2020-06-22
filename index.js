@@ -69,6 +69,8 @@ function generateMD(answers) {
   return `
  # ${answers.repoName}
 
+ ![GitHub top language](https://img.shields.io/github/languages/top/A${answers.username}/${answers.repoName})
+
   ## Description
   ${answers.description}
 
