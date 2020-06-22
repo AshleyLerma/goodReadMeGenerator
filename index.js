@@ -89,26 +89,26 @@ function generateMD(answers) {
   + [Questions](#questions)
 
   ## Installation
-  ${answers.installation}
+   ${answers.installation}
 
   ## Usage
-  ${answers.usage}
+   ${answers.usage}
 
   ## Credits
-  ${answers.credits}
+   ${answers.credits}
 
   ## License
-  ${answers.license}
+   ${answers.license}
 
   ## Contributing
-  ${answers.contribute}
+   ${answers.contribute}
 
   ## Tests
-  ${answers.tests}
+   ${answers.tests}
 
   ## Questions
-  ![GitHub profile photo](https://github.com/${answers.username}.png?size=100)
-  + [EMAIL ME](${answers.email} "${answers.email}")
+   ![GitHub profile photo](https://github.com/${answers.username}.png?size=100)
+    + [EMAIL ME](${answers.email} "${answers.email}")
 
   `;
 }
