@@ -101,7 +101,7 @@ function generateMD(answers) {
   ${answers.tests}
 
   ## Questions
-  ![GitHub profile photo](https://github.com/${answers.username}.png)
+  ![GitHub profile photo](https://github.com/${answers.username}.png?size=100)
 
   `;
 }
