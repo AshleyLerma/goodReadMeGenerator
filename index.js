@@ -4,8 +4,6 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// const questions = [];
-
 function promptUser() {
   return inquirer.prompt([
     {
@@ -62,6 +60,12 @@ function promptUser() {
       message: "Tests:",
       default: "Enter your testing information here",
     },
+    {
+      name: "email",
+      type: "input",
+      message: "Your email:",
+      default: "Enter your email address here",
+    },
   ]);
 }
 
@@ -69,7 +73,7 @@ function generateMD(answers) {
   return `
  # ${answers.repoName}
 
- ![GitHub top language](https://img.shields.io/github/languages/top/A${answers.username}/${answers.repoName})
+ ![GitHub top language](https://img.shields.io/github/languages/top/${answers.username}/${answers.repoName})
 
   ## Description
   ${answers.description}
@@ -82,6 +86,7 @@ function generateMD(answers) {
   + [License](#license)
   + [Contributing](#contributing)
   + [Tests](#tests)
+  + [Questions](#questions)
 
   ## Installation
   ${answers.installation}
@@ -101,6 +106,10 @@ function generateMD(answers) {
   ## Tests
   ${answers.tests}
 
+  ## Questions
+  ![GitHub profile photo](https://github.com/${answers.username}.png?size=100)
+  + [EMAIL ME](${answers.email} "${answers.email}")
+
   `;
 }
 
@@ -115,7 +124,3 @@ promptUser()
   .catch(function (err) {
     console.log(err);
   });
-
-// function init() {}
-
-// init();
