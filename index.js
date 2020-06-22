@@ -60,6 +60,12 @@ function promptUser() {
       message: "Tests:",
       default: "Enter your testing information here",
     },
+    {
+      name: "email",
+      type: "input",
+      message: "Your email:",
+      default: "Enter your email address here",
+    },
   ]);
 }
 
@@ -102,6 +108,7 @@ function generateMD(answers) {
 
   ## Questions
   ![GitHub profile photo](https://github.com/${answers.username}.png?size=100)
+  + [EMAIL ME](${answers.email} "${answers.email}")
 
   `;
 }
