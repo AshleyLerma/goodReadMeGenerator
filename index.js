@@ -80,7 +80,7 @@ function generateMD(answers) {
   + [License](#license)
   + [Contributing](#contributing)
   + [Tests](#tests)
-  + [Questions] (#questions)
+  + [Questions](#questions)
 
   ## Installation
   ${answers.installation}
