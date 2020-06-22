@@ -1,40 +1,46 @@
+# goodReadMeGenerator
 
- # goodReadMeGenerator
+![GitHub top language](https://img.shields.io/github/languages/top/AshleyLerma/goodReadMeGenerator)
 
- ![GitHub top language](https://img.shields.io/github/languages/top/AshleyLerma/goodReadMeGenerator)
+## Description
 
-  ## Description
-  Enter your repository description here
+Enter your repository description here
 
-  ## Table of Contents
-  + [Description](#description)
-  + [Installation](#installation)
-  + [Usage](#usage)
-  + [Credits](#credits)
-  + [License](#license)
-  + [Contributing](#contributing)
-  + [Tests](#tests)
-  + [Questions](#questions)
+## Table of Contents
 
-  ## Installation
-  Enter your install instructions here
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-  ## Usage
-  Enter your usage instructions here
+## Installation
 
-  ## Credits
-  Enter information about any collaborators here
+Enter your install instructions here
 
-  ## License
-  Enter your license information here
+## Usage
 
-  ## Contributing
-  Enter your contributor information here
+Enter your usage instructions here
 
-  ## Tests
-  Enter your testing information here
+## Credits
 
-  ## Questions
-  ![GitHub profile photo](https://github.com/AshleyLerma.png)
+Enter information about any collaborators here
 
-  
+## License
+
+Enter your license information here
+
+## Contributing
+
+Enter your contributor information here
+
+## Tests
+
+Enter your testing information here
+
+## Questions
+
+![GitHub profile photo](https://github.com/AshleyLerma.png?size=100)
