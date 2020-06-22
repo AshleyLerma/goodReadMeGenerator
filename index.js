@@ -4,8 +4,6 @@ const util = require("util");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// const questions = [];
-
 function promptUser() {
   return inquirer.prompt([
     {
@@ -118,7 +116,3 @@ promptUser()
   .catch(function (err) {
     console.log(err);
   });
-
-// function init() {}
-
-// init();
