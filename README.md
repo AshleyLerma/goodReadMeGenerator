@@ -4,6 +4,20 @@
 
   ## Description
   The user will be prompted for their GitHub username and other information pertaining to the project the README is for.
+  The README will be populated with the following:
+
++ At least one badge
++ Project title
++ Description
++ Table of Contents
++ Installation
++ Usage
++ License
++ Contributing
++ Tests
++ Questions
+  * User GitHub profile picture
+  * User GitHub email
 
   ## Table of Contents
   + [Description](#description)
@@ -13,8 +27,9 @@
   + [Questions](#questions)
 
   ## Installation
-  `+ npm install inquirer
-   + npm install fs + npm install util`
+  ` npm install inquirer`
+  ` npm install fs`
+  ` npm install util`
 
   ## Usage
   + As A Developer
