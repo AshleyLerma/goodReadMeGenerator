@@ -13,7 +13,8 @@
   + [Questions](#questions)
 
   ## Installation
-  `npm install inquirer, fs, and util`
+  `+ npm install inquirer
+   + npm install fs + npm install util`
 
   ## Usage
   + As A Developer
