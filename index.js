@@ -82,6 +82,7 @@ function generateMD(answers) {
   + [License](#license)
   + [Contributing](#contributing)
   + [Tests](#tests)
+  + [Questions] (#questions)
 
   ## Installation
   ${answers.installation}
@@ -100,6 +101,8 @@ function generateMD(answers) {
 
   ## Tests
   ${answers.tests}
+
+  ## Questions
 
   `;
 }
