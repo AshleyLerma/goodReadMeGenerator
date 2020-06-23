@@ -10,7 +10,13 @@ function promptUser() {
       name: "username",
       type: "input",
       message: "GitHub Username:",
-      default: "Enter your username here",
+      default: "Enter your GitHub username here",
+    },
+    {
+      name: "email",
+      type: "input",
+      message: "Your email:",
+      default: "Enter your email address here",
     },
     {
       name: "repoName",
@@ -22,13 +28,13 @@ function promptUser() {
       name: "description",
       type: "input",
       message: "Description",
-      default: "Enter your repository description here",
+      default: "Enter your project description here",
     },
     {
       name: "installation",
       type: "input",
-      message: "Installation:",
-      default: "Enter your install instructions here",
+      message: "Code needed to install your project:",
+      default: "Enter the code needed to install your project",
     },
     {
       name: "usage",
@@ -60,12 +66,6 @@ function promptUser() {
       message: "Tests:",
       default: "Enter your testing information here",
     },
-    {
-      name: "email",
-      type: "input",
-      message: "Your email:",
-      default: "Enter your email address here",
-    },
   ]);
 }
 
@@ -89,6 +89,8 @@ function generateMD(answers) {
   + [Questions](#questions)
 
   ## Installation
+  To install necessary dependencies, run the following command:
+
    ${answers.installation}
 
   ## Usage
