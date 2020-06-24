@@ -1,9 +1,13 @@
+// all requires
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 
+// converts a callback-based function to a Promise-based one
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// uses inquirer to prompt user for all answers
+// provides default answers if skipped
 function promptUser() {
   return inquirer.prompt([
     {
@@ -69,6 +73,7 @@ function promptUser() {
   ]);
 }
 
+// creates markdownfile plugging in the user answers
 function generateMD(answers) {
   return `
  # ${answers.repoName}
@@ -115,6 +120,7 @@ function generateMD(answers) {
   `;
 }
 
+// The order the functions should run
 promptUser()
   .then(function (answers) {
     const md = generateMD(answers);
