@@ -2,7 +2,7 @@
 
  ![GitHub top language](https://img.shields.io/github/languages/top/AshleyLerma/goodReadMeGenerator)
  
- ![Gif of generator in action](https://gifs.com/gif/readmegengif-YWwqLp)
+ ![Gif of generator in action](https://j.gifs.com/YWwqLp.gif)
 
 
 ## Description
