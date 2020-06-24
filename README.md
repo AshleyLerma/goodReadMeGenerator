@@ -2,8 +2,8 @@
 
  ![GitHub top language](https://img.shields.io/github/languages/top/AshleyLerma/goodReadMeGenerator)
  
-
- [Video of generator in action] (https://drive.google.com/file/d/1zFAENnGZnY4rty2_623I6HzCgJBbMWGZ/preview)
+ See it in action:
+ ![Video of generator in action] (https://drive.google.com/file/d/1zFAENnGZnY4rty2_623I6HzCgJBbMWGZ/preview)
 
 
 ## Description
